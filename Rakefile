@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "locked_attributes"
   gem.homepage = "http://github.com/theodorton/locked_attributes"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Lock up your AR attributes}
+  gem.description = %Q{Make persisted models have locked attributes.}
   gem.email = "theodor@tonum.no"
   gem.authors = ["Theodor Tonum"]
   # dependencies defined in Gemfile
@@ -33,7 +33,7 @@ end
 
 RSpec::Core::RakeTask.new(:rcov) do |spec|
   spec.pattern = 'spec/**/*_spec.rb'
-  spec.rcov = true
+  # spec.rcov = true
 end
 
 task :default => :spec

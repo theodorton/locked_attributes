@@ -1,9 +1,10 @@
-= locked_attributes
+= LockedAttributes
 
-Description goes here.
+Simple module that makes ActiveRecord attributes locked when the model has been saved.
+Should one attempt to change a locked attribute, the model will invalidate with a `:locked` message.
 
 == Contributing to locked_attributes
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
