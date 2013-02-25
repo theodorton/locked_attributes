@@ -5,16 +5,16 @@
 
 Gem::Specification.new do |s|
   s.name = "locked_attributes"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Theodor Tonum"]
-  s.date = "2013-02-22"
+  s.date = "2013-02-25"
   s.description = "Make persisted models have locked attributes."
   s.email = "theodor@tonum.no"
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     ".document",
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
     "VERSION",
     "lib/locked_attributes.rb",
