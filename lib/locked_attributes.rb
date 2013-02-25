@@ -12,21 +12,19 @@ module LockedAttributes
     end
   end
 
-  module InstanceMethods
-    def locked_attributes
-      self.class.locked_attributes || []
-    end
+  def locked_attributes
+    self.class.locked_attributes || []
+  end
 
-    def validate_locked_attributes
-      for attribute in locked_and_changed_attributes
-        errors.add(attribute, :locked)
-      end
+  def validate_locked_attributes
+    for attribute in locked_and_changed_attributes
+      errors.add(attribute, :locked)
     end
+  end
 
-    private
+  private
 
-    def locked_and_changed_attributes
-      changed & locked_attributes
-    end
+  def locked_and_changed_attributes
+    changed & locked_attributes
   end
 end
